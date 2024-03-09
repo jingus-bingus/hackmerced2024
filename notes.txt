@@ -35,6 +35,8 @@
 
 
 PLAN: 
-    -start with linear regression using averages of each raster map
+    -start with a linear regression using averages of each raster map
     -80-20 train/test split
     -perform grid search cross validation 
+    -test to check performance
+    -change model if needed
