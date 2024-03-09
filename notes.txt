@@ -1,0 +1,40 @@
+*which regressor depends on:
+    -relationship between variables Linear vs non-Linear
+    -size of data set
+
+*linear regression
+    -very simple
+    -doesn't require big ass computer to run
+    -very interperetable output
+
+    -may be too simple depending on the relationship between independent and dependent variables
+    -outliers will fuck it up
+    -assumes independent variables are not correlated at all
+    -can't determine feature importance but prolly doesn't matter for us
+
+*Ridge/Lasso regression: regularized linear regression
+    -like linear but regularization helps prevent overfitting
+    -maybe worth cross validating between the two models
+
+*linear support vector regression:
+    -also asssumes linear relationships
+    -robust to outliers
+    -easy to interperet
+    -sensitive to hyperparameters, search might take longer
+    -more computationally expensive but with smallish data set it might not matter
+
+*polynomial regression
+    -can show a more complex relationship
+
+
+*we start with linear regression, cross validate with ridge and lasso, then use polynomial regression if inaccurate
+*for scorer during hyperparameter tuning use mean squared error or mean absolute error
+*probably reduce dataset more than I thought
+    -random sampling or average out larger amounts of data points, probably average because rain amount is uniform
+
+
+
+PLAN: 
+    -start with linear regression using averages of each raster map
+    -80-20 train/test split
+    -perform grid search cross validation 
