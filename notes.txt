@@ -40,3 +40,17 @@ PLAN:
     -perform grid search cross validation 
     -test to check performance
     -change model if needed
+
+
+
+
+larger dataset: Linear Regression score: -229.2944
+    mean square error: 3066159450217.726
+    Linear Support Vector Regresssion score: 88528259356.09256
+    same for mse hella huge what???
+
+small dataset: Linear Regression score: 0.21929664569110052
+    mse: 0.00031546220088241793
+
+    svm: score: 0.0005640025841357425
+        mse: 0.0004041
